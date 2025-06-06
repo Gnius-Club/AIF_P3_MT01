@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: 3º Primaria - Sesión 1</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 1 - 3º Primaria</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el/la facilitador/a.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender qué es un microcontrolador como el Micro:bit e identificar su matriz LED.</li>
+                                        <li>Mostrar un icono simple (corazón) en el Micro:bit usando GCS (AL INICIO, mostrar icono).</li>
+                                        <li>Entender la estructura básica de un programa GCS: AL INICIO.</li>
+                                        <li>Introducir el concepto de Industria 4.0 de forma sencilla y conceptual.</li>
+                                        <li>Conocer el rol de Xolo (Chatbot IA) como asistente de Vibe Coding y traductor a GCS (pseudocódigo).</li>
+                                        <li>Iniciar la interacción con Xolo proporcionando nombre y perfil de aprendizaje.</li>
+                                    </ul>
+                                    <strong>Tácticas Principales:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Saludo Interactivo con Xolo:</strong> Bienvenida, personalización (nombre y perfil) y entusiasmo.</li>
+                                        <li><strong class="tactic-highlight">"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">AI GYM:</strong> Aprendizaje guiado por Xolo sobre conceptos clave (microcontrolador, Micro:bit, Industria 4.0, Vibe Coding, GCS, rol de Xolo).</li>
+                                        <li><strong class="tactic-highlight">Brain Spark:</strong> Ideación (Vibe), generación de GCS (pseudocódigo) con Xolo, implementación y prueba.</li>
+                                        <li><strong class="tactic-highlight">Gnius STORM (Think-Pair-Share):</strong> Compartición, prueba y retroalimentación de proyectos.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa en Micro:bit que muestra un icono simple (ej. corazón) al inicio.</li>
+                                        <li>Comprensión conceptual inicial de qué es un microcontrolador, Vibe Coding y GCS.</li>
+                                        <li>Interacción inicial exitosa con Xolo, proporcionando nombre y perfil.</li>
+                                        <li>Participación en la discusión sobre la tecnología que los rodea.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Micro:bits (uno por alumno/pareja idealmente, y uno para el/la profesor/a) con cables USB y portapilas/baterías.</li>
+                                        <li>Xolo (Chatbot IA - Agente Gnius) activo y funcionando para los alumnos.</li>
+                                        <li>(Opcional) Imágenes para ilustrar ejemplos de microcontroladores en la vida cotidiana y la Industria 4.0.</li>
+                                        <li>Proyecto de ejemplo del/de la profesor/a (Micro:bit programada para mostrar un icono simple al inicio).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar disponibilidad y carga de Micro:bits/baterías.</li>
+                                                <li>Tener la presentación de diapositivas lista.</li>
+                                                <li>Asegurar que los alumnos puedan acceder y usar a Xolo.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la Sesión 1, los diálogos sugeridos para el/la profesor/a y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor/a:</strong> Tener listo y funcional el proyecto de ejemplo del/de la profesor/a para la demostración (ej. Micro:bit mostrando un corazón al inicio).</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El/la facilitador/a indica a los alumnos que interactúen con Xolo (Chatbot IA) para la bienvenida, proporcionando su nombre y perfil.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 1 minuto</h3>
+                            <p>Proyectar Diapositiva 1 (Título de la misión/clase). El/la facilitador/a guía a los alumnos para que interactúen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, futuros genios de la tecnología! Hoy comenzamos una nueva aventura y tenemos un compañero muy especial, nuestro Chatbot IA llamado Xolo. Para empezar, quiero que cada uno salude a Xolo. Al saludarlo, díganle su nombre y el perfil con el que les gustaría trabajar hoy. Por ejemplo: 'Hola Xolo, soy [Tu Nombre] y mi perfil es [Tu Perfil]'. Xolo usará esta información para ayudarles de la mejor manera. ¡Interactúen con él ahora!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2 minutos</h3>
+                            <p>Recibir el saludo de Xolo y confirmar que ha registrado el perfil.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está dando la bienvenida y ya está conociéndolos con su nombre y perfil. Esto es muy importante porque Xolo adaptará algunas de sus explicaciones a sus intereses. Asegúrense de que Xolo les haya respondido. Si alguien tiene algún problema para comunicarse con Xolo o no ha recibido respuesta, ¡avíseme!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>El/la profesor/a presenta el objetivo de la clase y muestra un ejemplo de lo que podrán hacer.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 2.5 minutos</h3>
+                            <p>Proyectar Diapositiva 2 ("I Can Statement" e imagen de Micro:bit). El/la profesor/a explica la meta de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a empezar a explorar el increíble mundo de los microcontroladores con nuestro amigo, el Micro:bit. Al final de la clase, podrán decir: <strong>'Yo puedo decirle al Micro:bit que muestre un dibujo en su pantalla usando mi idea y la ayuda de Xolo.'</strong> Vamos a descubrir cómo estos pequeños cerebros están en todas partes, ¡desde nuestros juguetes hasta las fábricas!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: I Can Statement + Ejemplificación ⏰ 2.5 minutos</h3>
+                            <p>El/la profesor/a muestra su propio proyecto simple en Micro:bit.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean un ejemplo de lo que podrán lograr hoy, les voy a mostrar un proyecto muy sencillo que yo mismo/a preparé usando estas ideas. ¡Observen! (El/la profesor/a muestra su Micro:bit previamente programada, por ejemplo, para mostrar un corazón al inicio).</p>
+                                <p class="dialogue assistant">Como pueden ver, le di una instrucción a mi Micro:bit para que mostrara este dibujo apenas se encendiera. Ustedes harán algo muy parecido hoy, ¡pero con sus propias ideas y diseños! Y para eso, vamos a aprender una forma nueva de pensar nuestras ideas y comunicárselas al Micro:bit con ayuda de nuestro amigo Xolo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
+                <p>El/la facilitador/a guía a los alumnos para que aprendan conceptos clave de Xolo (Chatbot IA), introduciendo Vibe Coding y GCS.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 5 minutos</h3>
+                            <p>Proyectar Diapositiva 3 (Conceptos: Micro:bit, Microcontrolador, Industria 4.0, Vibe, GCS). El/la facilitador/a dirige la interacción con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, ahora es momento de nuestro A.I. GYM. Xolo tiene información muy importante para ustedes. Les va a explicar qué es este pequeño computador llamado Micro:bit, que en realidad es un <strong>microcontrolador</strong>. Les contará dónde encontramos estos 'cerebros' pequeñitos, incluso en la gran <strong>Industria 4.0</strong>, ¡que está cambiando el mundo!</p>
+                                <p class="dialogue assistant">También, Xolo les presentará una forma especial de trabajar que llamamos <strong>"Vibe Coding"</strong>. Esto significa que ustedes tendrán una 'vibe', una idea o sentimiento de lo que quieren que haga el Micro:bit. Luego, Xolo nos ayudará a traducir esa 'vibe' a un lenguaje de instrucciones que el Micro:bit entiende, llamado <strong>Gnius Code Spark (GCS)</strong>. El GCS es como un pseudocódigo, una receta paso a paso. Para hoy, Xolo les enseñará el primer comando GCS: cómo hacer que el Micro:bit muestre un icono <strong style="color: red;">AL INICIO</strong>. Pídanle a Xolo que les explique todo esto. ¡Escuchen con atención y pregunten si algo no queda claro!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark A ⏰ 20 minutos</h2>
+                <p>Proceso de diseño y programación de un proyecto propio con Micro:bit.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Spark A ⏰ 1 minuto</h3>
+                            <p>Proyectar Diapositiva 4 (Pregunta activadora sobre crear con luces). El/la profesor/a inicia la fase de ideación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es hora del Brain Spark! ⚡️ Ya sabemos que el Micro:bit tiene una pantalla de luces y que podemos decirle qué mostrar. Y ahora conocemos el "Vibe Coding": pensamos una idea, y Xolo nos ayuda con el GCS, nuestro pseudocódigo. Para nuestro primer proyecto: <strong>¿Qué dibujo o símbolo sencillo se les ocurre como 'vibe' para que aparezca en el Micro:bit apenas lo encendamos?</strong> ¡Piensen en formas, caras, objetos simples!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Spark A ⏰ 2 minutos</h3>
+                            <p>Proyectar Diapositiva 5 (Ejemplos de iconos simples). El/la profesor/a guía para concretar la idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Ahora, cada uno elija *una* idea, su "vibe" para este proyecto. Puede ser un corazón, una cara sonriente, una estrella... lo que más les guste. Una vez que tengan su 'vibe' clara, van a pedírsela a Xolo. Díganle: "Mi vibe es mostrar un [nombre del icono]", y pídanle que les genere el Gnius Code Spark (GCS) o pseudocódigo para esa idea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Spark A ⏰ 5 minutos</h3>
+                            <p>Proyectar Diapositiva 6 (Ejemplo de GCS para "CORAZON", indicando que es generado por Xolo). Los alumnos interactúan con Xolo para obtener su GCS (pseudocódigo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Excelente! Xolo les está ayudando a traducir su 'vibe' a GCS, nuestro pseudocódigo. Recuerden, para mostrar un icono, el GCS se verá algo así (El/la profesor/a puede escribir en la pizarra o mostrar el GCS para un icono ejemplo, como CORAZON):</p>
+                                 <p class="dialogue assistant" style="font-family: monospace; padding: 10px; border-radius: 5px;">
+                                    <span style="color: red;">
+                                        AL INICIO:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;// Esto mostrará un corazón en la pantalla del Micro:bit cuando se encienda.<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;mostrar icono CORAZON
+                                    </span>
+                                 </p>
+                                 <p class="dialogue assistant">Asegúrense de tener el GCS que corresponde a SU icono. Este GCS es como las instrucciones previas antes de cocinar o construir algo. Cuando lo tengan, ¡estaremos listos para ir a MakeCode y usar los bloques!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Brain Spark A ⏰ 10 minutos</h3>
+                            <p>Proyectar Diapositiva 7 (Interfaz de MakeCode con bloques relevantes y Micro:bit mostrando un icono). El/la facilitador/a guía la implementación y prueba.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra en MakeCode! Tienen estos minutos para programar. Usen su GCS (pseudocódigo) como guía para encontrar los bloques correctos. Aquí algunas pistas y preguntas guía:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;* ¿Qué bloque en MakeCode representa el <strong style="color: red;">AL INICIO:</strong> de su GCS?<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;* El GCS dice <strong style="color: red;">mostrar icono [SU_ICONO]</strong>. ¿En qué categoría de bloques está <strong style="color: red;">mostrar icono</strong> y cómo eligen el correcto?<br>
+                                    Prueben su código en el simulador primero. Si funciona, ¡descárguenlo a su Micro:bit y vean la magia! Si algo no sale como esperaban, revisen su GCS, los bloques que usaron... ¡y no duden en consultar a Xolo para depurar! Xolo puede ayudarles a entender si su GCS o sus bloques tienen algún error.</p>
+                                <p class="dialogue assistant">(Si hay tiempo y los alumnos terminan rápido) ¿Quieren un desafío? Piensen en una nueva 'vibe', pidan el GCS a Xolo, modifiquen su programa y pruébenlo. ¡Veamos cuántos iconos pueden hacer brillar!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Brain Spark A ⏰ 2 minutos</h3>
+                            <p>El/la profesor/a indica guardar los trabajos y explica brevemente Gnius Storm.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble trabajo, programadores! Por favor, guarden sus proyectos en MakeCode, ¡asegúrense de ponerles un nombre! En unos momentos, vamos a pasar a nuestro Gnius STORM, donde tendrán la oportunidad de mostrar sus asombrosas creaciones a sus compañeros y ver lo que ellos hicieron. ¡Prepárense para compartir!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir proyectos, recibir retroalimentación y reflexionar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>Proyectar Diapositiva 8. Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Genios, antes de compartir sus proyectos, tómense un momento para pensar en su propio trabajo! Reflexionen:<br>
+                                    <strong>¿Qué crearon?</strong> (El icono que programaron)<br>
+                                    <strong>¿Cómo funciona?</strong> (Usaron <strong style="color: red;">AL INICIO</strong> y <strong style="color: red;">mostrar icono</strong>, basados en su GCS)<br>
+                                    <strong>¿Están contentos con el resultado?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
+                            <p>Proyectar Diapositiva 9. Instrucciones para el intercambio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, júntense en parejas! Intercambien sus Micro:bits. Cada uno mostrará su icono a su compañero/a y le explicará brevemente qué GCS usó (el pseudocódigo que les dio Xolo). ¡El/la compañero/a observará el Micro:bit! Mientras lo hacen, el/la creador/a puede responder estas preguntas:<br>
+                                    <strong>* '¿Qué icono programé?'</strong><br>
+                                    <strong>* '¿Qué instrucción GCS le di al Micro:bit para que lo mostrara?'</strong><br>
+                                    <strong>* '¿Para qué podría servir mostrar un icono en el Micro:bit?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Proyectar Diapositiva 10. Instrucciones para la retroalimentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la retroalimentación! Sean honestos, pero amables. Después de ver el proyecto de su compañero/a, díganle:<br>
+                                   <strong>* '¿Qué te gustó del icono que eligió?'</strong><br>
+                                   <strong>* '¿Se te ocurre alguna otra idea para usar el comando <strong style="color: red;">mostrar icono</strong>?'</strong><br>
+                                    ¡Ayúdense mutuamente a tener más ideas geniales!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final y Cierre del/de la Profesor/a) ⏰ 1 minuto</h3>
+                            <p>Proyectar Diapositiva 11. Instrucción para la reflexión final y cierre del/de la profesor/a.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Excelente trabajo, Genios! Ahora, tómense un último momento para reflexionar:<br>
+                                    <strong>* '¿Qué aprendieron al compartir su proyecto?'</strong><br>
+                                    <strong>* '¿Qué fue lo más divertido de programar el Micro:bit hoy?'</strong>
+                                </p>
+                                <p class="dialogue assistant">(El/la profesor/a toma la palabra) ¡Muy bien hecho, genios! Hoy no solo hicieron un dibujo en una pantalla, ¡acaban de programar un microcontrolador! Y lo hicieron usando su "Vibe", la ayuda de Xolo para crear un GCS o pseudocódigo, y luego los bloques en MakeCode. Esos son los cerebros que mueven muchísima de la tecnología que usamos todos los días. Han dado su primer gran paso en el mundo de la Industria 4.0. ¡Felicidades!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
